@@ -1,0 +1,13 @@
+<label>Title:</label>
+<%= @post.title%><br>
+<label>Content:</label>
+<%= @post.content%><br>
+<label>Likes:</label>
+<%= @post.likes%><br>
+<label>Blogger Id:</label>
+<%= @post.blogger_id%><br>
+<label>Destination.id:</label>
+<%= @post.destination.id%><br>
+
+<%= link_to(@post.blogger.name, blogger_path(@post.blogger))%>
+<%= link_to(@post.destination.name, destination_path(@post.destination))%>
