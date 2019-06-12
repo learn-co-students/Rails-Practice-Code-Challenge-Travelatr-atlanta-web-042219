@@ -1,0 +1,10 @@
+<h1><%= @destination.name %></h1>
+<h2>Latest Posts</h2>
+<ul>
+  <% @recent_5_posts.each do |post| %>
+    <li><%= link_to(post.title, post)%></li>
+  <% end %>
+</ul>
+<h2>Featured Post</h2>
+<div><%= link_to(@most_liked_post.title, @most_liked_post)%></div>
+<h3>Average Blogger Age : <%=@avg_age %></h3>
